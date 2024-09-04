@@ -1,4 +1,4 @@
-package web.controller;
+package com.villa.java_market.web.controller;
 
 import com.villa.java_market.domain.Product;
 import com.villa.java_market.domain.service.ProductService;
