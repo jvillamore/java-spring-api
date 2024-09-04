@@ -38,7 +38,7 @@ public class Compra {
     @Getter @Setter
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "producto")
+    @OneToMany(mappedBy = "compra")
     @Getter @Setter
     private List<ComprasProducto> productos;
 }
