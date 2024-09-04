@@ -1,0 +1,15 @@
+  version: '3.3'
+
+  services:
+    postgres-java-spring:
+      image: postgres
+      restart: always
+      environment:
+        - POSTGRES_DB=my_db
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - TZ:America/La_Paz
+      ports:
+        - '5434:5432'
+      volumes:
+        - D:/Projects/Docker/postgres_java_spring:/var/lib/postgresql/data
