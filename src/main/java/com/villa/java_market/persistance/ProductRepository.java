@@ -5,6 +5,7 @@ import com.villa.java_market.domain.repository.IProductRepository;
 import com.villa.java_market.persistance.crud.IProductoCrudRepository;
 import com.villa.java_market.persistance.entity.Producto;
 import com.villa.java_market.persistance.mapper.IProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,9 +13,10 @@ import java.util.Optional;
 
 @Repository
 public class ProductRepository implements IProductRepository {
+    @Autowired
     private IProductoCrudRepository _productRepository;
+    @Autowired
     private IProductMapper _productMapper;
-
 
     @Override
     public List<Product> getAll() {
